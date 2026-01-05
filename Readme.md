@@ -6,8 +6,6 @@ PhishGuard XDR is a hybrid phishing detection system designed from a defender’
 
 It analyzes emails and URLs, assigns risk scores, generates clear verdicts, and logs events in a SIEM/XDR-ready format.
 
-
-
 Phishing remains one of the most effective attack vectors because it targets human trust.
 
 This project focuses on explainability, accuracy, and operational usability rather than black-box detection.
@@ -16,61 +14,30 @@ This project focuses on explainability, accuracy, and operational usability rath
 
 🚀 Features
 
-
-
-Hybrid detection using rule-based security indicators
-
-
-
-Supports Email content and URLs
-
-
-
-Tiered verdicts:
-
-
+* Hybrid detection using rule-based security indicators
+* Supports Email content and URLs
+* Tiered verdicts:
 
 ✅ Legitimate
 
-
-
 ⚠️ Suspicious
-
-
 
 🚨 Phishing
 
 
 
-Severity classification:
-
-
+* Severity classification:
 
 Low / Medium / High
 
 
 
-Risk scoring engine
-
-
-
-Explainable results with triggered rules
-
-
-
-Recommended actions (Allow / Review / Block \& Escalate)
-
-
-
-Structured JSON security logging (SIEM/XDR style)
-
-
-
-Web-based UI for real-time analysis
-
-
-
-Dashboard visualizations for insights
+* Risk scoring engine
+* Explainable results with triggered rules
+* Recommended actions (Allow / Review / Block \& Escalate)
+* Structured JSON security logging (SIEM/XDR style)
+* Web-based UI for real-time analysis
+* Dashboard visualizations for insights
 
 
 
@@ -80,37 +47,18 @@ Dashboard visualizations for insights
 
 PhishGuard XDR evaluates inputs using multiple phishing indicators such as:
 
-
-
-Urgent or threatening language
-
-
-
-Suspicious keywords (login, verify, secure, etc.)
-
-
-
-IP addresses used instead of domain names
-
-
-
-Credential-harvesting patterns
+* Urgent or threatening language
+* Suspicious keywords (login, verify, secure, etc.)
+* IP addresses used instead of domain names
+* Credential-harvesting patterns
 
 
 
 Each rule contributes to a risk score, which is processed by a verdict engine to determine:
 
-
-
-Final verdict
-
-
-
-Severity level
-
-
-
-Recommended response
+* Final verdict
+* Severity level
+* Recommended response
 
 
 
@@ -124,19 +72,9 @@ This ensures transparent and explainable detection.
 
 The project includes dashboards that visualize:
 
-
-
-Verdict distribution
-
-
-
-Severity levels
-
-
-
-Risk score trends
-
-
+* Verdict distribution
+* Severity levels
+* Risk score trends
 
 Email vs URL detection patterns
 
@@ -192,21 +130,21 @@ Each analysis is logged in structured JSON format:
 
 {
 
-&nbsp; "timestamp": "2026-01-04T14:37:35Z",
+  "timestamp": "2026-01-04T14:37:35Z",
 
-&nbsp; "event\_type": "phishing\_analysis",
+  "event\_type": "phishing\_analysis",
 
-&nbsp; "input\_type": "email",
+  "input\_type": "email",
 
-&nbsp; "verdict": "Suspicious",
+  "verdict": "Suspicious",
 
-&nbsp; "severity": "Medium",
+  "severity": "Medium",
 
-&nbsp; "risk\_score": 40,
+  "risk\_score": 40,
 
-&nbsp; "triggered\_rules": \["Urgent Language Detection"],
+  "triggered\_rules": \["Urgent Language Detection"],
 
-&nbsp; "recommended\_action": "Require manual review"
+  "recommended\_action": "Require manual review"
 
 }
 
@@ -216,119 +154,48 @@ Each analysis is logged in structured JSON format:
 
 This format is suitable for:
 
-
-
-SIEM ingestion
-
-
-
-Alert correlation
-
-
-
-Threat hunting
-
-
-
-Audit \& reporting
+* SIEM ingestion
+* Alert correlation
+* Threat hunting
+* Audit \& reporting
 
 
 
 🛠️ Tech Stack
 
-
-
-Python
-
-
-
-Flask
-
-
-
-Rule-based detection logic
-
-
-
-Pandas \& Matplotlib (dashboards)
-
-
-
-JSON logging (SIEM/XDR style)
+* Python
+* Flask
+* Rule-based detection logic
+* Pandas \& Matplotlib (dashboards)
+* JSON logging (SIEM/XDR style)
 
 
 
 🎯 What I Learned
 
-
-
-How phishing detection works in real-world environments
-
-
-
-Designing rule-based detection systems
-
-
-
-Risk scoring and decision engines
-
-
-
-Writing SIEM/XDR-ready logs
-
-
-
-Building explainable security tools
-
-
-
-Detection engineering fundamentals
-
-
-
-SOC-style monitoring and visualization
+* How phishing detection works in real-world environments
+* Designing rule-based detection systems
+* Risk scoring and decision engines
+* Writing SIEM/XDR-ready logs
+* Building explainable security tools
+* Detection engineering fundamentals
+* SOC-style monitoring and visualization
 
 
 
 🔮 Future Enhancements
 
-
-
-Machine learning–based phishing classification
-
-
-
-SIEM integration (Wazuh / Splunk / ELK)
-
-
-
-Alert correlation \& enrichment
-
-
-
-Threat intelligence feeds
-
-
-
-SOC workflow automation
+* Machine learning–based phishing classification
+* SIEM integration (Wazuh / Splunk / ELK)
+* Alert correlation \& enrichment
+* Threat intelligence feeds
+* SOC workflow automation
 
 
 
 📌 Why This Project Matters
 
-
-
-PhishGuard XDR demonstrates that phishing detection is not just about classification — it’s about:
-
-
-
-Reducing false positives
-
-
-
-Providing context to analysts
-
-
-
-Enabling faster, informed response decisions
-
+* PhishGuard XDR demonstrates that phishing detection is not just about classification — it’s about:
+* Reducing false positives
+* Providing context to analysts
+* Enabling faster, informed response decisions
